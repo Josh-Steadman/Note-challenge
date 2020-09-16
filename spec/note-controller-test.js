@@ -19,7 +19,7 @@ describe(NoteController, () => {
       controller.getHtml();
 
       expect(app.innerHTML).toBe(
-        '<ul><li id="note-0"><div>Test text</div></li></ul>'
+        '<ul><li id="note-0"><div><a href="#0">Test text</a></div></li></ul>'
       );
     });
   });
