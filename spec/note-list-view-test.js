@@ -18,7 +18,16 @@ describe(NoteListView, function () {
     notelist.createNote('This is also a test note');
     var notelistview = new NoteListView(notelist);
     expect(notelistview.returnView()).toBe(
-      '<ul><li><div>This is a test note</div></li><li><div>This is also a test note</div></li></ul>'
+      '<ul><li><div>This is a test note</div></li><li><div>This is also a test n</div></li></ul>'
+    );
+  });
+
+  it('it stores a NoteList object with a note with only 20 characters, and returns the note in structured html', function () {
+    var notelist = new NoteList();
+    notelist.createNote('it stores a NoteList object with a note with only 20 characters, and returns the note in structured html');
+    var notelistview = new NoteListView(notelist);
+    expect(notelistview.returnView()).toBe(
+      '<ul><li><div>it stores a NoteList </div></li></ul>'
     );
   });
 });
