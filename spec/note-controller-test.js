@@ -19,8 +19,9 @@ describe(NoteController, () => {
       controller.getHtml();
 
       expect(app.innerHTML).toBe(
-        '<ul><li id="note-0"><div><a href="#0">Test text</a></div></li></ul>'
+        '<ul><li><div><a id="note-0" href="#note-0">Test text</a></div></li></ul>'
       );
     });
   });
 });
+
