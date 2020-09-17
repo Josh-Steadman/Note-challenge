@@ -10,7 +10,7 @@ describe(NoteController, () => {
       // Mock the page
       let app = document.createElement('div');
       app.setAttribute('id', 'app');
-      app.style.visibility = 'hidden';
+      //app.style.visibility = 'hidden';
       document.body.appendChild(app);
       // Run the test
       let noteModel = new NoteList();
@@ -24,4 +24,3 @@ describe(NoteController, () => {
     });
   });
 });
-

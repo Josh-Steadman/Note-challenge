@@ -7,15 +7,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   notesController.getHtml();
 
-  // function showNoteForPage() {
-  //   showNote(getNoteFromUrl(window.location))
-  // }
+  window.onhashchange = document.getElementById("test").innerHTML = 'test';
 
-  // function getNoteFromUrl(location){
-  //   return location.hash.split("#")[1];
-  // }
 
-  // function showNote(note) {
-  //   document.getElementById("app").innerHTML = note.id
-  // }
 });
+
+//window.onhashchange = document.getElementById("app").innerHTML = 'test';
+
+// window.onhashchange = showNoteForPage;
+//
+// showNoteForPage() {
+//   console.log(getNoteFromUrl(window.location))
+//   showNote(getNoteFromUrl(window.location))
+// }
+//
+// getNoteFromUrl(location) {
+//   id = location.hash.split("#note-")[1];
+//   return this.noteList.getSingleNoteById(id)
+// }
+//
+// showNote(note) {
+//   document.getElementById("app").innerHTML = note.text;
+// }
